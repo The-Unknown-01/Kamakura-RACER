@@ -6,6 +6,9 @@
 
 Drift past seaside temples, dodge the Enoden tram, and burn nitro down a hand-sculpted track from the town of Kamakura to the bamboo groves and back.
 
+### ▶️ [**Play it now → the-unknown-01.github.io/Kamakura-RACER**](https://the-unknown-01.github.io/Kamakura-RACER/)
+
+[![Play](https://img.shields.io/badge/▶%20Play-Online-2ea44f?style=for-the-badge)](https://the-unknown-01.github.io/Kamakura-RACER/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Three.js](https://img.shields.io/badge/Three.js-r160-black?logo=three.js)](https://threejs.org/)
 [![Single File](https://img.shields.io/badge/build-none%20needed-brightgreen)](./)
@@ -55,16 +58,26 @@ Drift past seaside temples, dodge the Enoden tram, and burn nitro down a hand-sc
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Play Online
+
+The game is deployed on GitHub Pages — no install required:
+
+**👉 https://the-unknown-01.github.io/Kamakura-RACER/**
+
+Click anywhere on the start screen to enable audio (browsers block Web Audio until the first user gesture), then hold `W` and go.
+
+---
+
+## 💻 Run Locally
 
 ### Option 1 — Just open it
 Download or clone the repo and open `index.html` in any modern browser (Chrome, Edge, Firefox, Safari).
 
 ```bash
-git clone https://github.com/<your-username>/kamakura-racer.git
-cd kamakura-racer
-open index.html      # macOS
-# start index.html   # Windows
+git clone https://github.com/the-unknown-01/Kamakura-RACER.git
+cd Kamakura-RACER
+open index.html        # macOS
+# start index.html     # Windows
 # xdg-open index.html  # Linux
 ```
 
@@ -86,10 +99,26 @@ Then visit <http://localhost:8000>.
 
 ---
 
+## 📦 Deployment
+
+Hosted on **GitHub Pages** from the `main` branch, root folder.
+
+To deploy your own fork:
+
+1. Push your changes to `main`
+2. Go to **Settings → Pages**
+3. Set **Source** to `Deploy from a branch`
+4. Choose **`main`** / **`/ (root)`** and save
+5. Your build will be live at `https://<your-username>.github.io/Kamakura-RACER/` within a minute
+
+No CI, no build artifacts — Pages serves `index.html` directly.
+
+---
+
 ## 🗂 Project Structure
 
 ```
-kamakura-racer/
+Kamakura-RACER/
 ├── index.html          # The whole game — markup, styles, and script
 ├── README.md
 ├── LICENSE
@@ -125,6 +154,7 @@ Inside `index.html` the script is organized into clearly commented sections:
 - **Web Audio API** — every sound is synthesized at runtime
 - **Canvas 2D** — procedurally generated road texture and minimap
 - **Vanilla JS + CSS** — no framework, no bundler
+- **GitHub Pages** — zero-config static hosting
 
 ---
 
